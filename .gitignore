@@ -4,3 +4,9 @@ Thumbs.db
 .env.*
 .tools/
 node_modules/
+dist/
+.npm-cache/
+test-results/
+playwright-report/
+*.tsbuildinfo
+.screenshots/

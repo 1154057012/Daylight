@@ -1,52 +1,12 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f3eb">
-  <meta name="description" content="心晴 Daylight，给情绪一个温柔的落脚点。情绪日记与自我关怀空间，正在准备中。">
-  <title>心晴 Daylight · 给情绪一个温柔的落脚点</title>
-  <style>
-    :root{color-scheme:light;--paper:#f5f3eb;--ink:#293e35;--muted:#627065;--green:#42634c;--line:#dadfd2}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Microsoft YaHei","PingFang SC",sans-serif;-webkit-font-smoothing:antialiased}
-    a{color:inherit}a:focus-visible{outline:3px solid #6e8654;outline-offset:6px}header,main,footer{width:min(1120px,calc(100% - 64px));margin:auto}
-    header{height:108px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;gap:12px;align-items:center;text-decoration:none}.brand svg{width:38px;height:38px}.brand strong{font-size:23px;letter-spacing:2px}.brand span{font-family:Georgia,serif;font-size:21px;letter-spacing:0;margin-left:8px;font-weight:400}.edition{font-size:12px;letter-spacing:2px;color:var(--muted)}
-    .hero{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:center;padding:86px 0 80px}.eyebrow{display:flex;align-items:center;gap:9px;color:var(--green);font-size:12px;letter-spacing:3px}.eyebrow:before{content:"";width:6px;height:6px;background:var(--green);border-radius:50%}h1{font-size:clamp(38px,4.4vw,57px);font-weight:500;line-height:1.45;letter-spacing:2px;margin:24px 0}h1 em{font-style:normal;color:#66815d}.intro{font-size:15px;line-height:2.1;color:var(--muted);margin:0 0 30px;max-width:440px}.button{display:inline-flex;align-items:center;justify-content:center;gap:32px;min-height:50px;padding:12px 24px;border-radius:30px;background:var(--green);color:#fff;text-decoration:none;font-size:14px;transition:background .2s,transform .2s}.button:hover{background:#2e503a;transform:translateY(-2px)}.small-note{font-size:12px;color:var(--muted);margin-top:18px}
-    .art{position:relative;display:grid;place-items:center;min-height:390px}.art svg{width:100%;max-width:420px;height:auto}.art-caption{position:absolute;bottom:2px;font-family:Georgia,serif;font-size:15px;font-style:italic;color:#66745e;letter-spacing:.6px}.sun{animation:float 8s ease-in-out infinite;transform-origin:center}@keyframes float{50%{transform:translateY(-7px)}}
-    .journey{border-top:1px solid var(--line);padding:33px 0 55px;scroll-margin-top:30px}.section-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px}.section-head h2{font-size:16px;font-weight:500;margin:0;letter-spacing:2px}.status{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:7px}.status:before{content:"";height:6px;width:6px;background:#a3844b;border-radius:50%}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{padding:25px 26px 28px;border:1px solid var(--line);border-radius:5px;background:#faf9f380}.number{font-family:Georgia,serif;font-size:14px;color:#737b61}.card h3{font-size:19px;font-weight:500;margin:22px 0 11px}.card p{color:var(--muted);font-size:13px;line-height:1.9;margin:0}.note{margin-top:22px;color:var(--muted);font-size:12px;line-height:1.9}footer{border-top:1px solid var(--line);padding:26px 0 30px;display:flex;justify-content:space-between;gap:20px;font-size:11px;color:var(--muted);letter-spacing:1px}
-    @media(max-width:700px){header,main,footer{width:calc(100% - 40px)}header{height:84px}.brand strong{font-size:20px}.brand span{font-size:18px}.edition{font-size:10px;letter-spacing:1px}.hero{grid-template-columns:1fr;gap:18px;padding:52px 0 40px}h1{font-size:39px;letter-spacing:0}.intro{font-size:14px}.art{min-height:300px}.art svg{max-width:320px}.cards{grid-template-columns:1fr;gap:12px}.card{padding:22px}.card h3{margin:12px 0 8px}.section-head{gap:12px}.section-head h2{font-size:15px}.status{font-size:11px}.journey{padding-bottom:32px}footer{font-size:10px;letter-spacing:0;flex-wrap:wrap}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.sun{animation:none}.button{transition:none}}
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#f6f7f2" />
+<meta name="description" content="心晴 Daylight：记录情绪，发现生活中的小小规律，用呼吸、音乐和运动照顾自己。" />
+<title>心晴 Daylight · 情绪日记与自我关怀</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 </head>
-<body>
-  <header>
-    <a class="brand" href="./" aria-label="心晴 Daylight 首页"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M7 25a13 13 0 0 1 26 0" stroke="#42634c" stroke-width="2"/><path d="M5 29h30M10 34h20M20 3v5M6 10l4 4M34 10l-4 4" stroke="#42634c" stroke-width="2" stroke-linecap="round"/></svg><strong>心晴<span>Daylight</span></strong></a>
-    <span class="edition">给自己一点时间</span>
-  </header>
-  <main>
-    <section class="hero" aria-labelledby="title">
-      <div>
-        <div class="eyebrow">YOUR LITTLE SPACE TO FEEL</div>
-        <h1 id="title">每一种情绪，<br>都值得被<em>温柔接住。</em></h1>
-        <p class="intro">晴天也好，偶尔阴天也没关系。<br>在这里，写下心情，慢慢读懂自己，<br>让照顾自己成为日常里的一件小事。</p>
-        <a class="button" href="#coming">认识心晴 <span aria-hidden="true">↗</span></a>
-        <p class="small-note">一个属于你的情绪日记与自我关怀空间</p>
-      </div>
-      <div class="art">
-        <svg viewBox="0 0 440 430" role="img" aria-labelledby="art-title"><title id="art-title">太阳从柔和的绿色山丘间升起</title><defs><clipPath id="arch"><path d="M48 384V199a172 172 0 0 1 344 0v185Z"/></clipPath><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#e9eadd"/><stop offset="1" stop-color="#f3e8d5"/></linearGradient></defs><g clip-path="url(#arch)"><path fill="url(#sky)" d="M40 10h360v380H40z"/><circle class="sun" cx="261" cy="150" r="58" fill="#e7bc78"/><path d="M-10 342Q102 155 248 279T475 237V430H-10" fill="#b2bca1"/><path d="M-10 333Q138 366 228 286T461 308V440H-10" fill="#819579"/><path d="M-10 403Q128 283 279 358T460 335V440H-10" fill="#526f56"/><path d="M259 284Q165 339 223 365T187 435" fill="none" stroke="#e8debd" stroke-width="19"/><path d="M70 104q12-11 23 0M93 104q12-11 23 0" fill="none" stroke="#8b9681" stroke-width="2" stroke-linecap="round"/></g><path d="M39 384H401" stroke="#9aa68c" stroke-width="1"/><g fill="none" stroke="#617c5d" stroke-width="2" stroke-linecap="round"><path d="M29 385v-58m0 35q-23-9-19-27 20 4 19 27m0-9q24-12 21-27-20 3-21 27"/><path d="M408 385v-35m0 21q-14-3-14-17 13 1 14 17"/></g></svg>
-        <span class="art-caption">A little care. A little daylight.</span>
-      </div>
-    </section>
-    <section class="journey" id="coming" aria-labelledby="coming-title">
-      <div class="section-head"><h2 id="coming-title">从感受开始，慢慢靠近自己</h2><span class="status">功能正在准备中</span></div>
-      <div class="cards">
-        <article class="card"><span class="number">01 / RECORD</span><h3>写下此刻</h3><p>用一段文字、一个心情，留下今天的自己。快乐与低落，都有地方安放。</p></article>
-        <article class="card"><span class="number">02 / UNDERSTAND</span><h3>看懂心情</h3><p>回望情绪的起伏，发现生活与心情之间的联系，多了解自己一点点。</p></article>
-        <article class="card"><span class="number">03 / CARE</span><h3>照顾自己</h3><p>一次呼吸、一段舒缓的声音、一场散步。从小小的行动开始，给自己一些关怀。</p></article>
-      </div>
-      <p class="note">这里是心晴的首版介绍页，日记、情绪分析与关怀练习即将陆续上线。当前页面不收集或存储个人情绪记录。</p>
-    </section>
-  </main>
-  <footer><span>© 2026 心晴 Daylight</span><span>允许一切感受发生，也给自己一点阳光。</span></footer>
-</body>
+<body><div id="root"></div><script type="module" src="/src/main.tsx"></script></body>
 </html>
