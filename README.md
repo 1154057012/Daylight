@@ -28,6 +28,12 @@ npm run test:e2e
 
 浏览器测试使用本机 Microsoft Edge。CI 执行单元测试与构建，通过后发布到 GitHub Pages。浏览器端到端检查在本地执行。
 
+也可以直接回归线上版本：
+
+```powershell
+$env:DAYLIGHT_BASE_URL='https://1154057012.github.io/Daylight/'; npm.cmd run test:e2e
+```
+
 ## 发布
 
 GitHub Pages Source 设置为 GitHub Actions。推送 main 后 `.github/workflows/deploy.yml` 自动检查、构建并部署 dist。Vite 基础路径 `/Daylight/`，使用 HashRouter 避免静态托管子路径刷新问题。

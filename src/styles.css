@@ -12,4 +12,6 @@
 /* Keep small supporting text legible on the light surfaces. */
 .section-heading p,.privacy-line,.welcome-copy p,.welcome-date,.art-note,.chart-caption,.recent-entry span,.recent-empty p,.little-note p,.app-footer,.list-heading,.entry-mood time,.entry-text,.note-line,.setting-row p,.info-box p,.model-note p,.editor-hint,.eyebrow,.local-badge,.nav-caption,.soft-label,.mood-options>button>span,.insight-metrics p,.insight-metrics .card>span,.stats-strip p,.demo-invite,.chart-empty>small,.chart-empty>p{color:#68785e}
 .care-card p,.care-card-bottom,.care-footnote,.care-heading p,.care-category,.care-dialog>p,.care-hint,.care-time span,.care-audio-controls label{color:#68765f}
+.eyebrow{font-size:10px}.privacy-line,.chart-caption,.recent-entry span,.recent-empty p,.little-note p,.local-badge,.soft-label,.stats-strip p,.demo-invite,.note-line,.editor-hint{font-size:10px}.app-footer{font-size:10px}.setting-row p,.info-box p,.model-note p{font-size:11px}
 @media(max-width:650px){.care-history-row{align-items:flex-start;flex-direction:column;gap:8px}}
+@media(max-width:650px){.welcome-copy .eyebrow,.page-heading .eyebrow{font-size:9px}.privacy-line,.demo-invite,.note-line,.editor-hint{font-size:10px}.stats-strip p,.app-footer{font-size:9px}.section-heading p,.recent-entry span,.setting-row p,.info-box p,.model-note p{font-size:10px}}

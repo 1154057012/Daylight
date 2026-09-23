@@ -5,6 +5,7 @@ test('personal diary persists, edits and deletes; demo data stays separate', asy
   page.on('pageerror', e => errors.push(e.message));
   await page.goto('./');
   await expect(page.getByRole('heading', { name: /今天，也要好好/ })).toBeVisible();
+  expect(await page.locator('meta[http-equiv="Content-Security-Policy"]').getAttribute('content')).toContain("object-src 'none'");
   await page.screenshot({ path: '.screenshots/desktop-personal.png', fullPage: true, animations: 'disabled' });
   await page.getByRole('button', { name: '记录不错的心情' }).click();
   await page.getByLabel('想对自己说点什么？').fill('今天完成了汇报，也给自己留了一点休息时间。');
